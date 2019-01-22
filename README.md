@@ -14,7 +14,7 @@ After: client->springboard server->local-client server->server
 The transmission in `springboard server->local-client server` is masked on the byte level.
 
 
-# How to use
+# How it works
 There are two modes: local-client mode and springboard mode. In a typical setup, one machine will be in the local-client mode which listens for connection from the springboard server and then establishes connections with the destination server. Another machine will be in the springboard mode which listens for incoming client connections and then establishes connection with the local-client server. 
 
 When a client connects to the springboard server, the springboard server starts a coneection with the local-client server which then starts a connection with the actual server.
@@ -48,3 +48,10 @@ tcpec -mode=springboard -da=x.x.x.x:8844 -lp=8855
 
 Use `tcpec -h` to see the usage guide.
 
+
+## Compilation
+
+1. Make sure you have Go installed. The version required is `1.11.x`.
+2. Git pull the repo
+3. Run `make` in the repo directory
+4. `tcpec` will appear in the build folder
