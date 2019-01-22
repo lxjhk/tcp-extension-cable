@@ -44,7 +44,7 @@ tcpec -mode=springboard -da=x.x.x.x:8844 -lp=8855
 
 `lp` is the port number that clients will use to connect to the springboard.
 
-## command line arguments
+## Command line arguments
 
 Use `tcpec -h` to see the usage guide.
 
