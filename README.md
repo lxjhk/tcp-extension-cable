@@ -52,6 +52,6 @@ Use `tcpec -h` to see the usage guide.
 ## Compilation
 
 1. Make sure you have Go installed. The version required is `1.11.x`.
-2. Git pull the repo
+2. Git clone the repo
 3. Run `make` in the repo directory
 4. `tcpec` will appear in the build folder
