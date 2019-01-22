@@ -24,7 +24,7 @@ When a client connects to the springboard server, the springboard server starts 
 Command to start in the local-client mode:
 
 ```
-tcpec -mode=local-client -da=127.0.0.1:5000 -lp=8844
+tcpec -mode=local-client -da=x.x.x.x:5000 -lp=8844
 ```
 
 `da` represents the destination address. It represents the endpoint that the connection ultimately points to.
@@ -37,7 +37,7 @@ tcpec -mode=local-client -da=127.0.0.1:5000 -lp=8844
 Command to start in the springboard mode:
 
 ```
-tcpec -mode=springboard -da=127.0.0.1:8844 -lp=8855
+tcpec -mode=springboard -da=x.x.x.x:8844 -lp=8855
 ```
 
 `da` should be set to the local-client address with local-client's `lp`
