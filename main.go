@@ -26,8 +26,11 @@ func main() {
 	} else if *modePtr == "local-client" {
 		springboardMode = false
 		log.Println("local-client mode selected")
+	} else if *modePtr == "" {
+		flag.PrintDefaults()
+		os.Exit(0)
 	} else {
-		log.Fatal("Mode is not set correctly")
+		log.Fatalln("Mode is not set correctly")
 	}
 
 	listeningAddr, err := net.ResolveTCPAddr("tcp", listeningAddrPrefix+*listeningAddrPtr)
